@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tickets</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Mulish -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- tickets page class add -->
+  <body class="tickets-body">
+    <div class="d-lg-flex">
+      <!-- Sidebar -->
+      <aside class="sidebar d-lg-block border-end" data-bs-theme="dark">
+        <div class="p-4">
+          <div class="brand mb-4">
+            <img src="img/logo.png" alt="Dashboard Logo" width="32" height="32">
+            <span class="brand-text">Dashboard Kit</span>
+          </div>
+
+          <nav class="nav flex-column gap-1">
+            <!-- Overview (unactive) -->
+            <a class="nav-link" href="index.html">
+              <img class="nav-icon default-icon" src="img/1-1. overview.png" alt="">
+              <img class="nav-icon inactive-icon" src="img/1. overview.png" alt="">
+              Overview
+            </a>
+
+            <!-- Tickets (active) -->
+            <a class="nav-link active" href="tickets.html">
+              <img class="nav-icon default-icon" src="img/2. tickets.png" alt="">
+              <img class="nav-icon inactive-icon" src="img/2-1. tickets.png" alt="">
+              Tickets
+            </a>
+
+            <a class="nav-link" href="#">
+              <img class="nav-icon" src="img/3. ideas.png" alt="" aria-hidden="true">
+              Ideas
+            </a>
+            <a class="nav-link" href="#">
+              <img class="nav-icon" src="img/4. contacts.png" alt="" aria-hidden="true">
+              Contacts
+            </a>
+            <a class="nav-link" href="#">
+              <img class="nav-icon" src="img/5. agents.png" alt="" aria-hidden="true">
+              Agents
+            </a>
+            <a class="nav-link" href="#">
+              <img class="nav-icon" src="img/6. articles.png" alt="" aria-hidden="true">
+              Articles
+            </a>
+
+            <hr class="sidebar-divider">
+
+            <a class="nav-link" href="#">
+              <img class="nav-icon" src="img/a_1. settings.png" alt="" aria-hidden="true">
+              Settings
+            </a>
+            <a class="nav-link" href="#">
+              <img class="nav-icon" src="img/a_2. subscription.png" alt="" aria-hidden="true">
+              Subscription
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="flex-grow-1">
+        <!-- Topbar -->
+        <div class="topbar d-flex align-items-center justify-content-end px-4">
+          <div class="d-flex align-items-center gap-3">
+            <!-- search -->
+            <button class="icon-btn" aria-label="Search">
+              <img src="img/search.png" alt="">
+            </button>
+
+            <!-- new -->
+            <button class="icon-btn" aria-label="Notifications">
+              <img src="img/new.png" alt="">
+            </button>
+
+            <div class="topbar-divider"></div>
+
+            <!-- user -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="small">Jones Ferdinand</span>
+              <div class="avatar">
+                <img src="img/user-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="container-fluid p-4">
+          <!-- All tickets card -->
+          <div class="all-tickets-card card">
+            <!-- header -->
+            <div class="all-tickets-header">
+              <h5 class="mb-0">All tickets</h5>
+
+              <div class="all-tickets-actions">
+                <button class="at-btn" type="button">
+                  <span class="at-icon">
+                    <img src="img/tickets/sort.png" alt="Sort">
+                  </span>
+                  <span>Sort</span>
+                </button>
+
+                <button class="at-btn" type="button">
+                  <span class="at-icon">
+                    <img src="img/tickets/filter.png" alt="Filter">
+                  </span>
+                  <span>Filter</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <table class="tickets-table">
+              <thead>
+                <tr>
+                  <th class="col-details">Ticket details</th>
+                  <th class="col-customer">Customer name</th>
+                  <th class="col-date">Date</th>
+                  <th class="col-priority">Priority</th>
+                  <th class="col-more"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 1 -->
+                <tr>
+                  <td>
+                    <div class="ticket-main">
+                      <div class="ticket-avatar avatar-1">
+                        <img src="img/tickets/H1.png" alt="">
+                      </div>
+                      <div>
+                        <div class="ticket-title">Contact Email not Linked</div>
+                        <div class="ticket-sub">Updated 1 day ago</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-customer">
+                      Tom Cruise
+                      <div class="ticket-sub">on 24.05.2019</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-date">
+                      May 26, 2019
+                      <div class="ticket-sub">6:30 PM</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="priority-pill high">HIGH</span>
+                  </td>
+                  <td class="col-more">
+                    <span class="dots">⋮</span>
+                  </td>
+                </tr>
+
+                <!-- 2 -->
+                <tr>
+                  <td>
+                    <div class="ticket-main">
+                      <div class="ticket-avatar avatar-2">
+                        <img src="img/tickets/H2.png" alt="">
+                      </div>
+                      <div>
+                        <div class="ticket-title">Adding Images to Featured Posts</div>
+                        <div class="ticket-sub">Updated 1 day ago</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-customer">
+                      Matt Damon
+                      <div class="ticket-sub">on 24.05.2019</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-date">
+                      May 26, 2019
+                      <div class="ticket-sub">8:00 AM</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="priority-pill low">LOW</span>
+                  </td>
+                  <td class="col-more">
+                    <span class="dots">⋮</span>
+                  </td>
+                </tr>
+
+                <!-- 3 -->
+                <tr>
+                  <td>
+                    <div class="ticket-main">
+                      <div class="ticket-avatar avatar-3">
+                        <img src="img/tickets/H3.png" alt="">
+                      </div>
+                      <div>
+                        <div class="ticket-title">When will I be charged this month?</div>
+                        <div class="ticket-sub">Updated 1 day ago</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-customer">
+                      Robert Downey
+                      <div class="ticket-sub">on 24.05.2019</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-date">
+                      May 26, 2019
+                      <div class="ticket-sub">7:30 PM</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="priority-pill high">HIGH</span>
+                  </td>
+                  <td class="col-more">
+                    <span class="dots">⋮</span>
+                  </td>
+                </tr>
+
+                <!-- 4 (선택된 행) -->
+                <tr class="is-selected">
+                  <td>
+                    <div class="ticket-main">
+                      <div class="ticket-avatar avatar-4">
+                        <img src="img/tickets/H4.png" alt="">
+                      </div>
+                      <div>
+                        <div class="ticket-title">Payment not going through</div>
+                        <div class="ticket-sub">Updated 2 days ago</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-customer">
+                      Christian Bale
+                      <div class="ticket-sub">on 24.05.2019</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-date">
+                      May 25, 2019
+                      <div class="ticket-sub">5:00 PM</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="priority-pill normal">NORMAL</span>
+                  </td>
+                  <td class="col-more">
+                    <span class="dots">⋮</span>
+                  </td>
+                </tr>
+
+                <!-- 5 -->
+                <tr>
+                  <td>
+                    <div class="ticket-main">
+                      <div class="ticket-avatar avatar-5">
+                        <img src="img/tickets/H5.png" alt="">
+                      </div>
+                      <div>
+                        <div class="ticket-title">Unable to add replies</div>
+                        <div class="ticket-sub">Updated 2 days ago</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-customer">
+                      Henry Cavill
+                      <div class="ticket-sub">on 24.05.2019</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-date">
+                      May 25, 2019
+                      <div class="ticket-sub">4:00 PM</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="priority-pill high">HIGH</span>
+                  </td>
+                  <td class="col-more">
+                    <span class="dots">⋮</span>
+                  </td>
+                </tr>
+
+                <!-- 6 -->
+                <tr>
+                  <td>
+                    <div class="ticket-main">
+                      <div class="ticket-avatar avatar-6">
+                        <img src="img/tickets/H6.png" alt="">
+                      </div>
+                      <div>
+                        <div class="ticket-title">Downtime since last week</div>
+                        <div class="ticket-sub">Updated 3 days ago</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-customer">
+                      Chris Evans
+                      <div class="ticket-sub">on 23.05.2019</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-date">
+                      May 25, 2019
+                      <div class="ticket-sub">2:00 PM</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="priority-pill normal">NORMAL</span>
+                  </td>
+                  <td class="col-more">
+                    <span class="dots">⋮</span>
+                  </td>
+                </tr>
+
+                <!-- 7 -->
+                <tr>
+                  <td>
+                    <div class="ticket-main">
+                      <div class="ticket-avatar avatar-7">
+                        <img src="img/tickets/H7.png" alt="">
+                      </div>
+                      <div>
+                        <div class="ticket-title">Referral Bonus</div>
+                        <div class="ticket-sub">Updated 4 day ago</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-customer">
+                      Sam Smith
+                      <div class="ticket-sub">on 22.05.2019</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-date">
+                      May 25, 2019
+                      <div class="ticket-sub">11:30 AM</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="priority-pill low">LOW</span>
+                  </td>
+                  <td class="col-more">
+                    <span class="dots">⋮</span>
+                  </td>
+                </tr>
+
+                <!-- 8 -->
+                <tr>
+                  <td>
+                    <div class="ticket-main">
+                      <div class="ticket-avatar avatar-8">
+                        <img src="img/tickets/H8.png" alt="">
+                      </div>
+                      <div>
+                        <div class="ticket-title">How do I change my password?</div>
+                        <div class="ticket-sub">Updated 6 days ago</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-customer">
+                      Steve Rogers
+                      <div class="ticket-sub">on 21.05.2019</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="ticket-date">
+                      May 24, 2019
+                      <div class="ticket-sub">1:00 PM</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="priority-pill normal">NORMAL</span>
+                  </td>
+                  <td class="col-more">
+                    <span class="dots">⋮</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- bottom rows / pagenation -->
+            <div class="all-tickets-footer">
+              <div class="rows">
+                Rows per page: 
+                <span class="rows-value">8</span>
+                <button class="rows-arrow-btn" type="button">
+                  <img src="img/tickets/dropdown.png" class="rows-arrow-icon" alt="Rows dropdown">
+                </button>
+              </div>
+              <div class="pager">
+                <span class="pager-text">1–8 of 1240</span>
+                <button class="pager-btn" type="button">
+                  <img src="img/tickets/left.png" alt="Previous">
+                </button>
+                <button class="pager-btn" type="button">
+                  <img src="img/tickets/right.png" alt="Next">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- mobile Offcanvas sidebar -->
+    <div class="offcanvas offcanvas-start" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasSidebarLabel">Dashboard Kit</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <a class="nav-link" href="index.html">Overview</a>
+        <a class="nav-link" href="tickets.html">Tickets</a>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
